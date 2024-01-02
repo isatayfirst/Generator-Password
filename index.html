@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Генератор паролей</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор паролей</h1>
+        <div class="input-field">
+            <label for="length">Длина пароля:</label>
+            <input id="length" type="number" min="1" max="128" value="8">
+        </div>
+        <div class="checkboxes">
+            <label><input type="checkbox" id="numbers" checked> Цифры</label>
+            <label><input type="checkbox" id="letters" checked> Буквы</label>
+            <label><input type="checkbox" id="special" checked> Специальные символы</label>
+        </div>
+        <button id="generate">Сгенерировать</button>
+        <p id="password"></p>
+        <button id="copy">Копировать</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
